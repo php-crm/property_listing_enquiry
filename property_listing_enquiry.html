@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Property Listing Inquiry</title>
+</head>
+<body>
+	<center><h2>Property Listing Inquiry</h2></center>
+    <div class="container1">
+    <form action="submit_phpcrm_form.php" method="post">
+        <div >
+			<div><br>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+				<h4>Address</h4>    
+				<label for="street1">Street1</label>
+				<input type="text" id="street1" name="street1" required>
+				<label for="street2">Street2</label>
+				<input type="text" id="street2" name="street2"  >
+				<label for="city">City</label>
+				<input type="text" id="city" name="city"  required>
+				<label for="state">State</label>
+				<input type="text" id="state" name="state"  required>
+				<label for="zipcode">Zipcode</label>
+				<input type="number" id="zipcode" name="zipcode"  required>
+				<label for="email">Email</label> 
+				<input type="text" id="email" name="email"  placeholder="ex: myname@example.com" required>
+				<label for="phone">Phone</label>
+				<input type="number" id="phone" name="phone" required>
+				<h4>Include any listing numbers or properties of interest here:</h4>
+				<textarea id="message" name="message" style="height:150px"></textarea>  
+			</div>
+			<div>
+				<h4>Have you visited the State previously</h4>
+				<input type="radio" id=" yes" name="radio1" value="Yes" style="margin-left:13px;">&nbspYes<label for="yes"></label><br>
+				<input type="radio" id="no" name="radio1" value="No" style="margin-left:13px;">&nbspNo<label for="no"></label><br>
+					<h4> When are you planing on visiting?</h4>
+					<input type="date" id="date" name="date" required>
+					<h4> How long are you planing to stay?</h4>
+						<select name="stay" id="stay">
+						  <option value="More or less than hour">More or less than hour</option>
+						  <option value="less than a week">less than a week</option>
+						  <option value="One week">One week</option>
+						  <option value="One Month">One Month</option>
+						  <option value="I am not sure howlong">I am not sure how long</option>
+						</select>
+					<h4>Can we help you make travel arrangements?</h4>
+					<input type="radio" id=" yes" name="radio2" value="Yes" style="margin-left:13px;">&nbspYes<label for="yes"></label><br>
+					<input type="radio" id="no" name="radio2" value="No" style="margin-left:13px;">&nbspNo<label for="no"></label><br>
+					<h4> What kind of property are you interested in?</h4>
+					<input type="checkbox" id="property1" name="property1" value="Raw Land">
+					<label for="property1" >Raw Land</label ><br>
+					<input type="checkbox" id="property2" name="property2" value=" Lots in a Development">
+					<label for="property2">Lots in a Development</label><br>
+					<input type="checkbox" id="property3" name="property3"value="Single Family Home">
+					<label for="property3">Single Family Home</label><br>
+					<input type="checkbox" id="property4" name="property4"value="other">
+					<label for="property4">other</label><br>
+					<h4> What kind of location are you interested in?</h4>
+						<select name="location" id="location">
+						  <option value="Ocean View">Ocean View</option>
+						  <option value="Beachfront">Beachfront</option>
+						  <option value="Near Surf">Near Surf</option>
+						  <option value="In Town">In Town</option>
+						  <option value="Farm or Ranch">Farm or Ranch</option>
+						  <option value="Other">Other</option>
+						  <option value="Doesn't Matter">Doesn't Matter</option>
+						</select>
+						<h4> What is your budget?</h4>
+						<select name="budget" id="budget">
+						  <option value="$0-$50000">$0-$50000</option>
+						  <option value="$50000-$100000">$50000-$100000</option>
+						  <option value="$100000-$250000">$100000-$250000</option>
+						  <option value="$250000-$500000">$250000-$500000</option>
+						  <option value="$500000-$1000000">$500000-$1000000</option>
+						  <option value="$1000000+">$1000000+</option>
+						</select>
+						<h4>Question/Comments</h4>
+						<textarea id="message1" name="message1" style="height:150px"></textarea>
+			</div>
+		</div>
+			<input type="submit" value="Submit Form" class="btn">
+	</form>
+	</div>
+
+
+</body>
+</html>
